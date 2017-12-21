@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script src="https://use.fontawesome.com/5c0a387c1e.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Noto+Sans" rel="stylesheet">
+  <style> * {margin:0; padding:0;} </style>
+
+  <link rel="stylesheet" media="screen" href="/assets/index.css">
+  <title>Technopathic Blog</title>
+</head>
+<body>
+  <div class="container">
+    <header></header>
+    <main class="mainContainer">
+      <div class="sideContent">
+        <div class="siteHeader">
+          <div class="siteImage">
+            <img src="http://avatar.technopathic.me/cat-avatar-generator.php?seed=nadeem" class="postImage">
+          </div>
+          <div class="siteTitle">Technopathic</div>
+          <div class="siteAuthor">Coder & Teacher</div>
+        </div>
+        <div class="menuContainer">
+          <div class="siteMenu">
+            <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a href="/"><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a>
+            <a href="/"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+            <a href="/"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</a>
+            <a href="/"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact</a>
+          </div>
+          <div class="siteMenu">
+            <a href="https://github.com/Technopathic"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
+            <a href="mailto:nadeem@technopathic.me?Subject=Hey%20There" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a>
+          </div>
+        </div>
+      </div>
+      <div class="mainContent">
+        <div class="postsList">
+          {{range .posts}}
+            <div class="postBlock">
+              <div class="postTitle">{{.Title}}</div>
+              <div class="postDate">{{.Date}}</div>
+              <div class="postMain">
+                <div class="postContent">
+                  <div class="postSummary">{{.Summary}}</div>
+                  <a class="postMore" href="/{{.File}}">Read More</a>
+                </div>
+                <div class="postImageContainer">
+                  <img class="postImage" src={{.Image}} />
+                </div>
+              </div>
+            </div>
+          {{end}}
+          <div class="postOptions">
+            <div class="postButtons">
+              <a class="postButton" href={{.Previous}}><i class="fa fa-chevron-left" aria-hidden="true"></i> Older</a>
+              <a class="postButton" href={{.Next}}>Newer <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <span>Powered by Helix. Theme - Beacon</span>
+          <span>License - Attribution-NonCommercial-NoDerivatives 4.0 International</span>
+          <span>Copyright © 2017 Technopathic. All Rights Reserved.</span>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
