@@ -14,6 +14,8 @@
   flex-direction:column;
   flex-grow:1;
   margin-left:30%;
+  padding-left:15px;
+  padding-right:15px;
 }
 
 .postsList {
@@ -180,12 +182,11 @@
   margin:2%;
 }
 
+
 .siteMenu a {
   text-decoration:none;
   color:#EEEEEE;
   font-family:'Noto Sans';
-  display:flex;
-  flex-direction:column;
   display:block;
   padding:10px;
 }
@@ -193,6 +194,25 @@
 .siteMenu a i {
   width:20%;
 }
+
+.mobileNav {
+  background:#444444;
+  width:100%;
+}
+
+.mobileNav a {
+  text-decoration:none;
+  color:#EEEEEE;
+  font-family:'Noto Sans';
+  display:block;
+  padding:10px;
+  border-bottom:1px solid #777777;
+}
+
+.mobileNav a:hover {
+  background:#555555;
+}
+
 
 footer {
   border-top:1px solid #E8E8E8;
@@ -209,4 +229,52 @@ footer {
   color:#999999;
   text-align:center;
   line-height:25px;
+}
+
+.headerContainer {
+  width:100%;
+  display:none;
+}
+
+.headerContent {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:center;
+  background:#333333;
+  height:55px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.menuButton {
+  font-family:'Noto Sans';
+  font-size:1.8em;
+  border-radius:3px;
+  border:1px solid #EEEEEE;
+  cursor:pointer;
+  color:#FFFFFF;
+  width:40px;
+  height:40px;
+  text-align:center;
+}
+
+@media(max-width:1024px) {
+  .sideContent {
+    display:none;
+  }
+
+  .siteTitle {
+    font-size:2em;
+  }
+
+  .mainContent {
+    width:100%;
+    margin:0;
+  }
+
+  .headerContainer {
+    display:flex;
+    flex-direction:column;
+  }
 }

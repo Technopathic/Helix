@@ -53,6 +53,13 @@
   position:absolute;
 }
 
+@media(max-width:768px) {
+  .bannerTitle {
+    height:50px;
+    font-size:1.5em;
+  }
+}
+
 .bannerText {
   margin-left:15px;
   margin-right:15px;
@@ -67,6 +74,8 @@
 .commentsContainer {
   margin-top:15px;
   border-top:1px solid #E8E8E8;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 .menuIcon {
@@ -80,6 +89,8 @@
 .bodyContent {
   padding-top:30px;
   padding-bottom:30px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 .bodyContent p {
@@ -146,6 +157,7 @@ footer {
   color:#999999;
   text-align:center;
   line-height:25px;
+  padding:10px;
 }
 
 .socialContent {

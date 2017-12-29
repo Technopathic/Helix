@@ -9,12 +9,38 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Noto+Sans" rel="stylesheet">
   <style> * {margin:0; padding:0;} </style>
 
+  <script>
+    function showMenu() {
+      if(document.getElementById('mobileNav').style.display=='none') {
+        document.getElementById('mobileNav').style.display='block';
+      }
+      else {
+        document.getElementById('mobileNav').style.display='none';
+      }
+      return false;
+    }
+  </script>
+
   <link rel="stylesheet" media="screen" href="/assets/index.css">
   <title>Technopathic Blog</title>
 </head>
 <body>
   <div class="container">
-    <header></header>
+    <header class="headerContainer">
+      <div class="headerContent">
+        <div class="siteTitle">Technopathic</div>
+        <div class="menuButton" onclick=showMenu()>M</div>
+      </div>
+      <div id="mobileNav" class="mobileNav" style="display:none">
+        <a href="https://technopathic.me"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        <a href="https://blog.technopathic.me"><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a>
+        <a href="https://technopathic.me/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+        <a href="https://technopathic.me/skills"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</a>
+        <a href="https://technopathic.me/contact"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact</a>
+        <a href="https://github.com/Technopathic"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
+        <a href="mailto:nadeem@technopathic.me?Subject=Hey%20There" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</a>
+      </div>
+    </header>
     <main class="mainContainer">
       <div class="sideContent">
         <div class="siteHeader">
@@ -26,11 +52,11 @@
         </div>
         <div class="menuContainer">
           <div class="siteMenu">
-            <a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-            <a href="/"><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a>
-            <a href="/"><i class="fa fa-user" aria-hidden="true"></i> About</a>
-            <a href="/"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</a>
-            <a href="/"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact</a>
+            <a href="https://technopathic.me"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a href="https://blog.technopathic.me"><i class="fa fa-pencil" aria-hidden="true"></i> Blog</a>
+            <a href="https://technopathic.me/about"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+            <a href="https://technopathic.me/skills"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</a>
+            <a href="https://technopathic.me/contact"><i class="fa fa-commenting-o" aria-hidden="true"></i> Contact</a>
           </div>
           <div class="siteMenu">
             <a href="https://github.com/Technopathic"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
